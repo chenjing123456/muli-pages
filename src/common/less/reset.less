@@ -1,0 +1,207 @@
+//reset
+
+@blue: #5c7cec;
+@red: #e73320;
+// @comFontColor:#02FBFC;
+.anchorBL {//百度地图左下角logo
+    display: none;
+}
+//去掉高德地图左下角logo
+.amap-logo {
+    display: none !important;
+}
+.amap-copyright {
+    bottom:-100px !important;
+    display: none !important;
+}
+.el-container .el-footer {
+    padding: 0px;
+}
+.el-pagination {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    padding-right: 24px;
+    li:not(.disabled){
+        &.active{
+            background-color: #409EFF !important;
+            color: #fff;
+        }
+        &:active {
+            color: #409EFF;
+        }
+    }
+
+}
+html {
+    height: 100%;
+}
+body {
+    padding: 0;
+    height: 100%;
+    margin: 0;
+    font-size: 14px;
+}
+// 滚动样式
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+body::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 2em;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(147, 153, 165, 0.4);
+    border-radius: 2em;
+}
+p {
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-box {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.float-right{
+    float: right;
+    &>div:last-child{
+        clear:both;
+    }
+}
+
+.content-container-outer {
+    flex: 1;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    overflow: auto;
+    // 滚动样式
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: white;
+        border-radius: 2em;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(147, 153, 165, 0.4);
+        border-radius: 2em;
+    }
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.full-container{
+    position: absolute;
+    top:40px;
+    left: 20px;
+    bottom:20px;
+    right: 20px;
+    &>div{
+        height: 100%;
+    }
+}
+
+.el-select-dropdown__item{
+    text-indent: 1em;
+}
+.el-tabs__item {
+    font-weight: normal;
+}
+.el-tabs__nav{
+    margin-left: 20px;
+}
+
+.main-content{
+    padding:0px .27rem;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.el-breadcrumb {
+    .el-breadcrumb__item {
+        
+        .el-breadcrumb__inner {
+            color: #909399;
+        }
+        
+        &:last-child .el-breadcrumb__inner {
+            color: #606266;
+        }
+    }
+}
+//表格底纹
+.el-table thead tr, .el-table thead th {
+    background-color: #f2f4f7;
+}
+//表格样式修改
+.el-table::before {
+    height: 0;
+}
+
+/deep/.el-dialog {
+    .el-dialog__header {
+        padding-top: 10px;
+        border-bottom: 1px solid #F4F5F9;
+    }
+    .el-dialog__header {
+        top: 0;
+    }
+}

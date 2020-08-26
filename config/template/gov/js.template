@@ -1,0 +1,18 @@
+import Vue from 'vue'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import "../../common/less/reset.less";
+
+import App from './${config._filename}.vue'
+${config.store ? "import store from '../../store'" : ""}
+${config.router ? "import router from './router'" : ""}
+
+
+Vue.config.productionTip = false;
+
+Vue.use(ElementUI)
+new Vue({
+    ${config.router ? "router," : ""}
+    ${config.store ? "store," : ""}
+    render: h => h(App)
+}).$mount('#app')

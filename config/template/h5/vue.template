@@ -1,0 +1,21 @@
+<template>
+</template>
+<script>${config.axios ? "import {  } from '@api/h5/${config._filename}'\n" : ''}
+export default{
+    data(){
+        return {
+
+        }
+    },
+    components:{
+
+    },
+    created(){},
+    mounted(){},
+    methods: {}
+}
+</script>
+<style lang="less" scoped='scoped'>
+// less已使用px2rem，直接使用375适配的px就行
+${config.css ? "@import './less/" + config._filename + ".less';" : ''}
+</style>

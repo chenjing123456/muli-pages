@@ -1,0 +1,29 @@
+<template>
+    
+</template>
+
+<script>
+
+
+export default {
+    data() {
+        return {
+
+        };
+    },
+    created() {
+    },
+
+    methods: {
+
+    },
+    components: {
+        
+    }
+};
+</script>
+
+<style lang="less" scoped>
+${config.css ? "@import './less/" + config._filename + ".less';" : ''}
+
+</style>
