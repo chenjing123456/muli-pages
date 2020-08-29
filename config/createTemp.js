@@ -55,12 +55,12 @@ function createDir(dirname) {
 
 function createFile({ filename, template }, fileConfig) {
     return new Promise((resolve) => {
-        let str = fs.readFileSync(template).toString();
+        let str = fs.readFileSync(template).toString();//读取文件
         let f = new Function('config', 'return `' + str + '`');
         resolve(f(fileConfig));
     }).then(res => {
         return new Promise(function (resolve, reject) {
-            fs.writeFile(filename, res, (error) => {
+            fs.writeFile(filename, res, (error) => {//异步地将数据写入到一个文件，如果文件已存在则覆盖该文件
                 if (error) {
                     console.log('出现问题了', `${error}`.red);
                     reject(error)
